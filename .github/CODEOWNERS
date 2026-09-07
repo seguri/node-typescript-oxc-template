@@ -1,0 +1,5 @@
+# Default owners for everything
+* @seguri
+
+# Pin CODEOWNERS itself as its own owner; last matching line wins
+/.github/CODEOWNERS @seguri
