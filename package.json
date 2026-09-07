@@ -3,11 +3,15 @@
     "build": "tsc --noEmit",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "quality": "npm run build && npm run fmt:check"
+    "lint": "oxlint --fix",
+    "lint:check": "oxlint",
+    "quality": "npm run build && npm run fmt:check && npm run lint:check"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
     "oxfmt": "^0.67.0",
+    "oxlint": "^1.82.0",
+    "oxlint-tsgolint": "^7.0.2001",
     "typescript": "^7.0.2"
   },
   "engines": {
