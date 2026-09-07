@@ -1,13 +1,16 @@
 {
-  "engines": {
-    "node": ">=24"
-  },
   "scripts": {
     "build": "tsc --noEmit",
-    "quality": "npm run build"
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "quality": "npm run build && npm run fmt:check"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
+    "oxfmt": "^0.67.0",
     "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
